@@ -1,0 +1,53 @@
+#mapa {
+    padding-top: initial;
+}
+
+#linhaMapa {
+    height: 90vh;
+}
+
+#map {
+    width: initial;
+    margin-top: 0px;
+}
+
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.box .row {
+  /*border: 1px dotted grey;*/
+}
+
+.box .row.header {
+  flex: 0 1 auto;
+  /* The above is shorthand for:
+  flex-grow: 0,
+  flex-shrink: 1,
+  flex-basis: auto
+  */
+}
+
+.box .row.content {
+  flex: 1 1 auto;
+}
+
+.box .row.footer {
+  flex: 0 1 40px;
+}
+
+
+@media (min-width: 768px) {
+    #linhaMapa {
+        margin-top: 58px;
+    }
+}
+
+@media (max-width: 768px) {
+    #linhaMapa {
+        margin-top: 66px;
+    }
+    
+}
